@@ -1,7 +1,18 @@
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.backup
+# Ignore all files and directories
+*
 
-# Lock Files
-*.lock.hcl
+# Don't ignore the README file
+!README.md
+
+# Ignore the entire .terraform directory
+.terraform/
+
+# Ignore large binary files (Terraform providers, etc.)
+*.exe
+*.zip
+
+# Ignore terraform lock files
+*.terraform.lock.hcl
+
+# Ignore any large files managed by Git LFS
+terraform-provider-*.exe
