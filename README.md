@@ -64,8 +64,12 @@ ARM_TENANT_ID: Your Azure Active Directory tenant ID.
 
 <<<<<<< HEAD
 ## **vmmodule/**: This module defines a resource block for creating multiple Azure Virtual Machines (VMs).
-main.tf : This main.tf file configures the deployment of Azure resources by calling custom modules such as vmmodules, resourcerg, and vnet. It defines the infrastructure, including the creation of a Resource Group, Virtual Network (VNet), Subnet, Network Security Group (NSG), Network Interface Associations, Public IPs, and Virtual Machines (VMs). The file uses variables to pass values like resource names, locations, and VM details, while also ensuring that the resources are created dynamically based on input variables.s
-=======
-**vmmodule/**: This module defines a resource block for creating multiple Azure Virtual Machines (VMs).
-main.tf : This main.tf file configures the deployment of Azure resources by calling custom modules such as vmmodules, resourcerg, and vnet. It defines the infrastructure, including the creation of a Resource Group, Virtual Network (VNet), Subnet, Network Security Group (NSG), Network Interface Associations, Public IPs, and Virtual Machines (VMs). The file uses variables to pass values like resource names, locations, and VM details, while also ensuring that the resources are created dynamically based on input variables.
->>>>>>> d2901c1ba5292037b01ef8c3926b01f8e0d64652
+## **Resourcerg/**: This folder contains a Terraform module that defines resources.
+
+- `main.tf`: Defines the resources and infrastructure configurations in the module.
+- `variables.tf`: Contains variable definitions used in the `main.tf` file.
+
+## **vmmodule/**: This module defines a resource block for creating multiple Azure Virtual Machines (VMs)
+
+- `main.tf`: This `main.tf` file configures the deployment of Azure resources by calling custom modules such as `vmmodules`, `resourcerg`, and `vnet`. It defines the infrastructure, including the creation of a Resource Group, Virtual Network (VNet), Subnet, Network Security Group (NSG), Network Interface Associations, Public IPs, and Virtual Machines (VMs). The file uses variables to pass values like resource names, locations, and VM details, while also ensuring that the resources are created dynamically based on input variables.
+
