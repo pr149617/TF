@@ -50,19 +50,21 @@ ARM_CLIENT_SECRET: The secret associated with your Azure service principal.
 ARM_SUBSCRIPTION_ID: Your Azure subscription ID.
 ARM_TENANT_ID: Your Azure Active Directory tenant ID.
 
-1. **Clone the repository**:
-   First, clone the repository to your local machine:
+
+
+  1. **Clone the repository**:
+     First, clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/pr149617/TF
-   cd TF
+    git clone https://github.com/pr149617/TF
+    cd TF
 
-## **Resourcerg/**: This folder contains a Terraform module that defines resources.
+## **Resourcerg/** : This folder contains a Terraform module that defines resources.
 
   - main.tf : Defines the resources and infrastructure configurations in the module.
   - variables.tf : Contains variable definitions used in the `main.tf` file.
 
-<<<<<<< HEAD
+
 ## **vmmodule/**: This module defines a resource block for creating multiple Azure Virtual Machines (VMs).
 ## **Resourcerg/**: This folder contains a Terraform module that defines resources.
 
