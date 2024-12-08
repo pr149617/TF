@@ -5,7 +5,7 @@
 It will deploy 12 Resources.
 
 terraform state list   :
-`module.VM.azurerm_virtual_machine.TestVM[0]/
+`module.VM.azurerm_virtual_machine.TestVM[0]  
 module.VM.azurerm_virtual_machine.TestVM[1]
 module.network.azurerm_network_interface.netinterface[0]
 module.network.azurerm_network_interface.netinterface[1]
