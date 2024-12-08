@@ -29,14 +29,14 @@ If you prefer not to use the Azure CLI, you can set environment variables to pas
 
 You can set the following environment variables in your terminal:
 
-```bash
+
 export ARM_CLIENT_ID="<your-client-id>"
 export ARM_CLIENT_SECRET="<your-client-secret>"
 export ARM_SUBSCRIPTION_ID="<your-subscription-id>"
 export ARM_TENANT_ID="<your-tenant-id>"
 
 
-```PowerShell
+
 $env:ARM_CLIENT_ID="<your-client-id>"
 $env:ARM_CLIENT_SECRET="<your-client-secret>"
 $env:ARM_SUBSCRIPTION_ID="<your-subscription-id>"
@@ -55,9 +55,9 @@ ARM_TENANT_ID: Your Azure Active Directory tenant ID.
   1. **Clone the repository**:
      First, clone the repository to your local machine:
 
-   ```bash
+
     git clone https://github.com/pr149617/TF
-    cd TF
+    cd TF 
 
 ## **Resourcerg/** : This folder contains a Terraform module that defines resources.
 
