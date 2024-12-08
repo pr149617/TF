@@ -102,3 +102,7 @@ Defines a Network Security Group (NSG) with security rules for controlling inbou
 **azurerm_network_interface**
 Creates network interfaces associated with subnets and public IPs, with configurations for private and public IP address allocation.
 
+
+**Root_Module**: This is the main Terraform configuration file where all modules are called. You can view it here: [main.tf](https://github.com/pr149617/TF/blob/main/Root_module/main.tf)
+
+
