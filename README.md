@@ -73,7 +73,7 @@ ARM_TENANT_ID: Your Azure Active Directory tenant ID.
 
 - `main.tf`: This `main.tf` file configures the deployment of Azure resources by calling custom modules such as `vmmodules`, `resourcerg`, and `vnet`. It defines the infrastructure, including the creation of a Resource Group, Virtual Network (VNet), Subnet, Network Security Group (NSG), Network Interface Associations, Public IPs, and Virtual Machines (VMs). The file uses variables to pass values like resource names, locations, and VM details, while also ensuring that the resources are created dynamically based on input variables.
 
-## **VNet Module** : This Terraform module provisions network resources in Azure, including a Virtual Network (VNet), Subnet, Public IPs, Network Interfaces, and a Network Security Group (NSG) with custom rules. It is designed to set up the foundational networking infrastructure for Azure-based deployments.
+## **VNet Module/** : This Terraform module provisions network resources in Azure, including a Virtual Network (VNet), Subnet, Public IPs, Network Interfaces, and a Network Security Group (NSG) with custom rules. It is designed to set up the foundational networking infrastructure for Azure-based deployments.
 
 `variable.tf`
 **resourcename**
