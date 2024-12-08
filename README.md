@@ -75,3 +75,30 @@ ARM_TENANT_ID: Your Azure Active Directory tenant ID.
 
 ## **VNet Module** : This Terraform module provisions network resources in Azure, including a Virtual Network (VNet), Subnet, Public IPs, Network Interfaces, and a Network Security Group (NSG) with custom rules. It is designed to set up the foundational networking infrastructure for Azure-based deployments.
 
+`variable.tf`
+**resourcename**
+Defines the name of the resource group where the Azure resources will be created.
+
+**vnetname**
+Specifies the name for the Virtual Network (VNet) to be created.
+
+**vnet_count**
+Sets the number of virtual networks, public IPs, and network interfaces to be created based on this value.
+
+`output.tf`
+interfaceid
+Outputs the IDs of the network interfaces created, enabling easy reference for further configurations.
+
+**public_ips**
+Outputs the public IP addresses assigned to the created resources, allowing them to be referenced or used elsewhere.
+
+`main.tf`
+**azurerm_virtual_network**
+Creates a Virtual Network with a customizable name, address space, and resource group.
+
+**azurerm_network_security_group**
+Defines a Network Security Group (NSG) with security rules for controlling inbound and outbound network traffic, such as SSH and HTTP access.
+
+**azurerm_network_interface**
+Creates network interfaces associated with subnets and public IPs, with configurations for private and public IP address allocation.
+
